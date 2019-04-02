@@ -1,0 +1,25 @@
+                                                                SPARK SQL
+
+Apache Spark is a lightning-fast cluster computing framework designed for fast computation.
+Spark SQL is a new module in Spark which integrates relational processing with Spark’s functional programming API. It supports querying data either via SQL or via the Hive Query Language.
+
+Why Spark SQL?
+
+Spark SQL originated as Apache Hive to run on top of Spark and is now integrated with the Spark stack. Apache Hive had certain limitations as mentioned below. Spark SQL was built to overcome these drawbacks and replace Apache Hive.
+
+Limitations With Hive:
+
+ *  Hive launches MapReduce jobs internally for executing the ad-hoc queries. MapReduce lags in the performance when it comes to the analysis  	   of medium-sized datasets (10 to 200 GB).
+ *  Hive has no resume capability. This means that if the processing dies in the middle of a workflow, you cannot resume from where it got  	stuck.
+ *  Hive cannot drop encrypted databases in cascade when trash is enabled and leads to an execution error. To overcome this, users have to use 	   Purge option to skip trash instead of drop. 
+
+These drawbacks gave way to the birth of Spark SQL.
+
+Spark SQL Overview
+
+Spark SQL integrates relational processing with Spark’s functional programming. It provides support for various data sources and makes it possible to weave SQL queries with code transformations thus resulting in a very powerful tool.
+Spark SQL blurs the line between RDD and relational table. It offers much tighter integration between relational and procedural processing, through declarative DataFrame APIs which integrates with Spark code. It also provides higher optimization. DataFrame API and Datasets API are the ways to interact with Spark SQL.
+
+With Spark SQL, Apache Spark is accessible to more users and improves optimization for the current ones. Spark SQL provides DataFrame APIs which perform relational operations on both external data sources and Spark’s built-in distributed collections. It introduces extensible optimizer called Catalyst as it helps in supporting a wide range of data sources and algorithms in Big-data.
+
+
