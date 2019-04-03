@@ -1,0 +1,40 @@
+                                                      Spark SQL
+
+
+Spark SQL Libraries
+
+Spark SQL has the following four libraries which are used to interact with relational and procedural processing:
+1. Data Source API (Application Programming Interface):
+
+This is a universal API for loading and storing structured data.
+
+  * It has built in support for Hive, Avro, JSON, JDBC, Parquet, etc.
+  * Supports third party integration through Spark packages
+  * Support for smart sources.
+  * It is a Data Abstraction and Domain Specific Language (DSL) applicable on structure and semi structured data.
+  * DataFrame API is distributed collection of data in the form of named column and row.
+  * It is lazily evaluated like Apache Spark Transformations and can be accessed through SQL Context and Hive Context.
+  * It processes the data in the size of Kilobytes to Petabytes on a single-node cluster to multi-node clusters.
+  * Supports different data formats (Avro, CSV, Elastic Search and Cassandra) and storage systems (HDFS, HIVE Tables, MySQL, etc.).
+  * Can be easily integrated with all Big Data tools and frameworks via Spark-Core.
+
+Provides API for Python, Java, Scala, and R Programming.
+
+2. DataFrame API:
+
+A DataFrame is a distributed collection of data organized into named column. It is equivalent to a relational table in SQL used for storing data into tables.
+
+3. SQL Interpreter And Optimizer:
+
+SQL Interpreter and Optimizer is based on functional programming constructed in Scala.
+
+  * It is the newest and most technically evolved component of SparkSQL. 
+  * It provides a general framework for transforming trees, which is used to perform analysis/evaluation, optimization, planning, and run time 	   code spawning.
+  * This supports cost based optimization (run time and resource utilization is termed as cost) and rule based optimization, making queries    	   run much faster than their RDD (Resilient Distributed Dataset) counterparts.
+
+     e.g. Catalyst is a modular library which is made as a rule based system. Each rule in framework focuses on the distinct optimization.
+
+4. SQL Service:
+
+SQL Service is the entry point for working along structured data in Spark. It allows the creation of DataFrame objects as well as the execution of SQL queries.
+
